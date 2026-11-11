@@ -3,9 +3,8 @@ pipeline{
   triggers{githubPush()}
 
   stages {
-    stage('Ceckout'){
-      steps{'checkout scm
-           }
+    stage('Checkout'){
+      steps{'checkout scm'}
     }
     stage('Build'){
       steps{bat 'javac -version'
@@ -13,8 +12,7 @@ pipeline{
            }
     }
     stage('Test'){
-      steps{ bat 'java AppTest'
-           }
+      steps{ bat 'java AppTest"}
     }
   }
       post{
