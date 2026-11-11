@@ -3,6 +3,6 @@ public class App{
     return a+b;
   }
   public static void main(String[] args){
-    System.out.println("90 + 90 = "+add(90,90));
+    System.out.println("98 + 90 = "+add(98,90));
       }
 }
